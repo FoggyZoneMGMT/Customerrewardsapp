@@ -24,8 +24,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        # Use npm install if you don't have a package-lock.json; change to `npm ci`
-        # only if you commit a lockfile.
+        # Use `npm ci` only if you commit package-lock.json; otherwise use `npm install`.
         run: npm install
 
       - name: Build
