@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          package-manager-cache: 'node-version'
+          package-manager-cache: 'node-version-file'
 
       - name: Install dependencies
         # Use `npm ci` only if you commit package-lock.json; otherwise use `npm install`.
