@@ -27,9 +27,6 @@ jobs:
         # Use `npm ci` only if you commit package-lock.json; otherwise use `npm install`.
         run: npm install
 
-      - name: Start Dev
-        run: npm run dev
-
       - name: Build
         run: npm run build
 
