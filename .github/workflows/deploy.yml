@@ -33,13 +33,13 @@ jobs:
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v4
         with:
-          path: src
+          path: build
           
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-    environment:
-        name: github-pages
